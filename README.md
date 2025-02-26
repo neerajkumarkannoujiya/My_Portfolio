@@ -8,7 +8,6 @@ Welcome to my personal portfolio project! This project showcases my skills, proj
 
 - [Project Overview](#project-overview)
 - [Features](#features)
-- [Directory Structure](#directory-structure)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Technologies Used](#technologies-used)
@@ -41,59 +40,6 @@ The project is designed to be **responsive**, ensuring a seamless experience acr
 
 ---
 
-## Directory Structure
-
-Here’s an overview of the project structure:
-└── neerajkumarkannoujiya-my_portfolio/
-├── README.md
-├── Procfile
-├── db.sqlite3
-├── manage.py
-├── project_dump.json
-├── requirements.txt
-├── runtime.txt
-├── assets/
-│ ├── css/
-│ ├── fonts/
-│ ├── images/
-│ ├── js/
-│ └── vendor/
-├── blog/
-│ ├── init.py
-│ ├── admin.py
-│ ├── apps.py
-│ ├── models.py
-│ ├── views.py
-│ └── migrations/
-├── blog_website/
-│ ├── init.py
-│ ├── settings.py
-│ ├── urls.py
-│ └── wsgi.py
-├── media/
-│ ├── blog_banners/
-│ └── profile_images/
-├── notification/
-│ ├── init.py
-│ ├── admin.py
-│ ├── models.py
-│ └── views.py
-├── staticfiles/
-│ ├── admin/
-│ └── ckeditor/
-├── templates/
-│ ├── about.html
-│ ├── base.html
-│ ├── blog_details.html
-│ ├── home.html
-│ └── profile.html
-└── user_profile/
-├── init.py
-├── admin.py
-├── models.py
-├── views.py
-└── migrations/
-
 
 ---
 
@@ -105,3 +51,96 @@ To run this project locally, follow these steps:
    ```bash
    git clone https://github.com/your-username/neerajkumarkannoujiya-my_portfolio.git
    cd neerajkumarkannoujiya-my_portfolio
+
+2. **Set up a virtual environment and activate it**:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+3. **Install dependencies**:
+   ```bash
+   pip install -r requirements.txt
+   
+4. **Apply migrations**:
+   ```bash
+   python manage.py migrate
+
+5. **Create a superuser (optional)**:
+   ```bash
+   python manage.py createsuperuser
+
+6. **Run the development server**:
+   ```bash
+   python manage.py runserver
+Thala. **Access the project**:
+Open your browser and go to http://127.0.0.1:8000/.
+
+
+
+
+
+   
+
+## Usage
+
+### Home Page
+Navigate to the home page to view featured projects and an introduction.
+
+### Blog Section
+Browse through blog posts, filter by category or tag, and read detailed articles.
+
+### User Profile
+Log in to manage your profile, create new blog posts, or update existing ones.
+
+### Contact Page
+Use the contact form to get in touch with me.
+
+---
+
+## Technologies Used
+
+### Frontend
+- **HTML**
+- **CSS**
+- **JavaScript**
+- **Bootstrap**
+
+### Backend
+- **Django**
+- **SQLite**
+
+### Other Tools
+- **jQuery**
+- **FontAwesome**
+- **CKEditor**
+
+---
+
+## Screenshots
+
+Here are some screenshots of the project:
+
+### Home Page
+![Home Page](assets/images/screenshots/home.png)
+
+### Blog Details
+![Blog Details](assets/images/screenshots/blog_details.png)
+
+### User Profile
+![User Profile](assets/images/screenshots/profile.png)
+
+---
+
+## Contributing
+
+Contributions are welcome! If you'd like to contribute, please follow these steps:
+
+1. **Fork the repository**.
+2. **Create a new branch**:
+   ```bash
+   git checkout -b feature/YourFeatureName
+
+
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
